@@ -1,0 +1,11 @@
+import os
+
+def count_directories(path='.'):
+    count = 0
+    for entry in os.scandir(path):
+        if entry.is_dir():
+            count += 1
+            count += count_directories(entry.path)
+    return count
+
+print("Number of directories and sub-directories:", count_directories())
