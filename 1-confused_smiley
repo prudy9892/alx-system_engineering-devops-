@@ -1,3 +1,2 @@
-julien@ubuntu:/tmp/h$ ./1-confused_smiley 
-"(Ôo)'
-julien@ubuntu:/tmp/h$ 
+# Print the confused smiley
+print("(Ôo)'")
